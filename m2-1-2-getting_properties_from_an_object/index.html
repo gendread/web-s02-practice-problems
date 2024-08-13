@@ -10,7 +10,17 @@
     Use square bracket notation to access the age property and store it in a variable called studentAge.
     Finally, log the grade property using either dot or square bracket notation.
     */
-    //ENTER YOUR CODE HERE
+    let student = 
+    {
+      name: 'Johhny',
+      age: 10,
+      grade: 4
+    }
+
+    let studentName = student['name'];
+    let studentAge = student.age;
+
+    console.log(student.grade);
 
     /*
     PROBLEM 2:
@@ -19,7 +29,18 @@
     Use square bracket notation to access the year property and store it in a variable called carYear.
     Finally, log the color property using either dot or square bracket notation.
     */
-    //ENTER YOUR CODE HERE
+    let car = 
+    {
+      make: 'Ford',
+      model: 'F150',
+      year: 1997,
+      color: 'white'
+    }
+
+    let carMakeModel = car.make + ' '+ car.model;
+    let carYear = car['year'];
+
+    console.log(car.color);
 
     /*
    PROBLEM 3:
@@ -33,7 +54,13 @@
       publicationYear: 1979,
       protagonist: { name: "Arthur Dent", occupation: "Everyman" }
     };
-    //ENTER YOUR CODE HERE
+    
+    console.log(book.title);
+    console.log(book.author);
+
+    console.log(book.protagonist['name']);
+
+    console.log(book.protagonist.occupation);
 
     /*
     PROBLEM 4:
@@ -44,7 +71,13 @@
       name: "Alice",
       grades: { math: 95, science: 83, history: 88 }
     }
-    //ENTER YOUR CODE HERE
+    
+    let aliceMathGrade = aliceStudent.grades['math'];
+    console.log(aliceMathGrade);
+
+    let aliceNameAndHistoryGrade = aliceStudent.name+ ' '+aliceStudent.grades.history;
+    console.log(aliceNameAndHistoryGrade);
+
 
   </script>
 </body>
