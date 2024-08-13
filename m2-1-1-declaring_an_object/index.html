@@ -7,13 +7,23 @@
     /*
     PROBLEM 1: Create a new empty human object.
     */
-    //ENTER YOUR CODE HERE
+    let human = 
+      {
+
+      }
+    console.log(human);
 
     /*
     PROBLEM 2: Create a hero object with firstName, lastName,
     and age properties using the values Bruce Wayne, 33.
     */
-    //ENTER YOUR CODE HERE
+    let hero = 
+    {
+      firstName: 'Bruce',
+      lastName: 'Wayne',
+      age: 33
+    }
+    console.log (hero);
 
     /*
     PROBLEM 3: Using the supplied object, log the cake's flavor property twice,
@@ -27,19 +37,22 @@
       frosting: "vanilla",
       flavor: "carrot"
     }
-    //ENTER YOUR CODE HERE
+    console.log(cake.flavor);
+    let currentFlavor = cake['flavor'];
+    console.log(currentFlavor)
 
     /*
     PROBLEM 4: Modify the existing cake object flavor to "chocolate" and
     log the result.
     */
-    //ENTER YOUR CODE HERE
+    cake.flavor = 'chocolate';
+    console.log(cake.flavor);
 
     /*
     PROBLEM 5 (DEBUGGING): Why doesn't this log out the appropriate value?
     (uncomment line console log below)
     */
-    // console.log("The current flavor is currentFlavor")
+    console.log(`The current flavor is ${currentFlavor}`);
 
   </script>
 </body>
