@@ -9,28 +9,32 @@
     */
     const name = 'Bernadette';
 
-    //ENTER YOUR CODE HERE
+    const characters = name.split('');
+    console.log(characters);
 
     /*
     PROBLEM 2: Create an array from the string's characters below and console.log the resulting array to the console.
     */
     const hawaiianFish = 'humuhumunukunukuāpuaʻa';
 
-    //ENTER YOUR CODE HERE
+    console.log(hawaiianFish.split('')); //no space === each letter
 
     /*
     PROBLEM 3: Create an array from the string's words below and console.log the resulting array to the console.
     */
     const motivation = 'Today is your opportunity to build the tomorrow you want';
 
-    //ENTER YOUR CODE HERE
+    console.log(motivation.split(' ')); //1 space === each word
 
     /*
     PROBLEM 4: Create an array from the string's words below and console.log the resulting array to the console.
     */
     const proverb = 'The bamboo that bends is stronger that the oak that resists';
 
-    //ENTER YOUR CODE HERE
+    let proverbArray = [proverb.split(' ')];
+    console.log(proverbArray);
+
+    console.log(proverb.split(' '));
 
     /*
     PROBLEM 5 (DEBUGGING): The expected output of the code below is to split the myString string into an array using the , character as a separator, and then print out the resulting array to the console. However, when you run this code, you notice that myArray is an empty array.
@@ -44,7 +48,10 @@
 
     */
 
-    //ENTER YOUR CODE HERE
+    const myString = "apple,banana,orange,pear";
+    const myArray = [myString.split(',')]; //comma is being used as the diveder point between words
+
+    console.log(myArray);
 
   </script>
 </body>
